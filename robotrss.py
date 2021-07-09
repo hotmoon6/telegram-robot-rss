@@ -8,6 +8,7 @@ from util.database import DatabaseHandler
 from util.processing import BatchProcess
 from util.feedhandler import FeedHandler
 import os
+import constants
 
 class RobotRss(object):
 
@@ -203,8 +204,7 @@ class RobotRss(object):
         Send a message when the command /help is issued.
         """
 
-        message = "If you need help with handling the commands, please have a look at my <a href='https://github.com/cbrgm/telegram-robot-rss'>Github</a> page. There I have summarized everything necessary for you!"
-        update.message.reply_text(message, parse_mode=ParseMode.HTML)
+        update.message.reply_text(constants.help_text)
 
     def stop(self, bot, update):
         """
