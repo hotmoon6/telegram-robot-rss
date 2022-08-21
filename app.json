@@ -1,6 +1,7 @@
 {
     "name": "telegram-robot-rss",
     "description": "Telegram RSS Bot",
+    "repository": "https://github.com/hotmoon6/telegram-robot-rss",
     "env": {
     "BOT_TOKEN": {
       "description": "your bot token",
